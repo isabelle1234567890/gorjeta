@@ -48,5 +48,4 @@ function receberPorcentagem(evento){
     } else{
         porcentagem = 0
     }
-    
-  
+}
