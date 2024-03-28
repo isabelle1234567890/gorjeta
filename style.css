@@ -68,7 +68,7 @@ color: var(--green-800);
 outline: none;
 }
 
-.conta input::placeholder {
+.conta input::placeholder{
     color: var(--green-300);
 
 }
@@ -163,10 +163,12 @@ main {
     color: var(--green-300);
 }
 .conta:has(input:focus) div,
-.pessoas:has(input:focus) div {
+.pessoas:has(input:focus) div ,
+.gorjeta#outra:focus{
     outline: 2px solid var(--light-green);
 }
-.gorjeta div {
+.gorjeta div
+ {
     margin-top: 1rem;
 
     display: grid;
@@ -238,6 +240,14 @@ main {
     padding-block: 0.5rem;
 }
 
+
+.conta input::-webkit-inner-spin-button,
+.pessoas input::-webkit-inner-spin-button
+.gorgeta #outra::-webkit-inner-spin-button {
+
+    display: none;
+}
+
 @media(min-widh: 920px){
     body{
         display:flex;
@@ -262,10 +272,6 @@ main {
     }
 }
 
-.conta input::-webkit-inner-spin-button,
-.conta input::-webkit-inner-spin-button{
-    display: none;
-}
 
 .gorjeta div{
     grid-template-columns: 1fr 1fr 1fr;
