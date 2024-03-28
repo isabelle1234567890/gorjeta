@@ -200,7 +200,7 @@ main {
     border-radius: 0.9375rem;
     padding: 1.5rem;
 }
-.resultados div{
+.resultados div div{
     border: 1px ;
     display: flex;
     justify-content: space-between;
@@ -239,6 +239,18 @@ main {
 }
 
 @media(min-widh: 920px){
+    body{
+        display:flex;
+        border: 1px;
+        flex-direction: column;
+        min-width: 100svh;
+        justify-content: center;
+        gap: 5rem;
+    }
+
+    header{
+        padding: 0;
+    }
     main{
         display: flex;
         gap:3rem;
@@ -250,9 +262,26 @@ main {
     }
 }
 
+.conta input::-webkit-inner-spin-button,
+.conta input::-webkit-inner-spin-button{
+    display: none;
+}
+
 .gorjeta div{
     grid-template-columns: 1fr 1fr 1fr;
     border-radius: 1.5625rem;
     max-width: 57.5rem;
     margin-inline: auto;
+}
+
+.resultados {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2.5rem;
+
+}
+
+.resultados div>strong{
+    font-size: 3rem;
 }
