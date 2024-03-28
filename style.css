@@ -14,5 +14,19 @@
     --green-700:#3d6666;
     --green-800:#00474b;
     --light-green:#26c2ae;
+    --white : #ffffff;
+}
 
+body{
+    background-color: var(--green-200);
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    padding-block: 2.8rem;
+}
+
+main{
+    background-color: var(--white);
 }
